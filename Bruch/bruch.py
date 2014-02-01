@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from __future__ import division
 
 
@@ -75,14 +76,12 @@ class Bruch(object):
     def getNenner(self):
         return self.__nenner
 
+    def Ausgabe(self):
+        print u"Zähler: \t" + str(int(self.__zaehler))
+        print "Nenner: \t" + str(int(self.getNenner()))
+
+        return
+
     def check(self):
         print self.__kuerzen(self.__zaehler, self.__nenner)
-
-zahl1 = Bruch(-100, 2)
-
-zahl2 = Bruch(-1, 2)
-
-zahl3 = zahl1 / 25
-print zahl3.getDezimal()
-print zahl3.getZahler()
-print zahl3.getNenner()
+        return
